@@ -1,0 +1,734 @@
+
+  /* VARIABLE */ 
+$pink:#FF79DA ;
+$purple:#9356DC ;
+$green:#99E2D0 ;
+$shadow:0px 0px 5px 1px #9791919c;
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    @media screen and (min-width: 700px) and (max-width: 900px){
+        overflow-x: hidden; 
+    }
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* HEADER */
+header{
+    .linkBack{
+        display: flex;
+        align-items: center;
+
+           .fas.fa-arrow-left{ 
+               font-size: 30px;
+               position: absolute;
+               margin-left: 40px;
+           }
+    }
+
+    h1{
+        font-family: 'Shrikhand', cursive;
+        font-size: 2rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;  
+        @media screen and (min-width: 700px) and (max-width: 900px){
+            width: 100%;
+            font-size: 3rem;
+            padding: 40px 0px;
+            margin: 0px 0px;
+        }
+        @media screen and (min-width: 901px){
+            width: 100%;
+            font-size: 4rem;
+            margin: 0px 0px;   
+            padding: 50px 0px;       
+        }
+    }
+
+    .localisation{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(230, 224, 224);
+        border-top: 3px rgba(128, 128, 128, 0.205) solid;
+        @media screen and (min-width: 700px) and (max-width: 900px){
+            font-size: 1.5rem;
+            margin: 20px 0px;
+            margin: 0px 0px;
+        }
+        @media screen and (min-width: 901px){
+            font-size: 2rem;
+            margin: 20px 0px;
+            margin: 0px;
+        }
+            p{
+                font-weight: bold;
+                padding-left: 15px;
+            }
+    }
+}
+/* BTN EXPLORE */ 
+.explore{
+    background: rgba(230, 224, 224, 0.274);
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 40px;
+}
+        .btnExplore{
+            background: $pink;
+            background-image: -webkit-linear-gradient(top, $pink , $purple );
+            background-image: -moz-linear-gradient(top, $pink , $purple );
+            background-image: -ms-linear-gradient(top, $pink , $purple );
+            background-image: -o-linear-gradient(top, $pink , $purple );
+            background-image: linear-gradient(to bottom, $pink , $purple );
+            -webkit-border-radius: 28;
+            -moz-border-radius: 28;
+            border-radius: 28px;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 13px 20px 13px 20px;
+            box-shadow: 0px 6px 9px 1px #B5B5B5;
+        }
+
+/* BTN */
+.fonction{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 901px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    h3{
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 5%;
+
+        @media screen and (min-width: 700px) and (max-width: 900px){
+            width: 100%;
+            text-align: center;   
+            font-size: 2rem;  
+        }
+
+        @media screen and (min-width: 901px){
+            text-align: center;
+            font-size: 24px; 
+            width: 100%;
+        }
+
+    }
+    .btnFonction{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        width: 400px;
+        border-radius: 23px;
+        -webkit-box-shadow: $shadow; 
+        box-shadow: $shadow;
+        font-size: 20px;
+        font-weight: bold;
+        background:rgb(241, 238, 238);
+        padding: 15px 20px 15px 20px;
+        border: solid #dce7ed 1px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+
+        &:hover{
+            background: #9256dc4b;
+            border: none;
+        }
+        &:hover span{
+            color: $purple;
+        }
+  
+        .nombreListe{
+            border: 1px solid $purple;
+            background:$purple;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 8px;
+            margin-left: -37px;
+        }
+        span{
+            color: grey;
+            margin-left: 20px;
+        }
+    }
+}
+/* CARTE RESTAURANT */ 
+.restaurant{
+    background: rgba(230, 224, 224, 0.274);
+    padding-bottom: 80px;
+
+    @media screen and (min-width: 901px){
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    h3{
+        font-size: 16px;
+        margin-left: 5%;
+        padding-top: 50px;
+        font-weight: 900;
+
+        @media screen and (min-width: 700px) and (max-width: 900px){
+            text-align: center;
+            font-size: 2rem; 
+        }
+
+        @media screen and (min-width: 901px){
+            width: 100%;
+            text-align: center;
+            font-size: 2rem; 
+        }
+    }
+}
+.bloc{
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: $shadow;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+
+     h4, p{
+        width: 50%;
+        margin:0;
+     }
+}
+
+a{
+    .new{
+        width: 75px;
+        background: $green;
+        position: absolute;
+        margin-left: 255px;
+        margin-top: 10px;
+        text-align: center;
+        border-radius: 3px;
+        font-weight: bold;
+        color:#4b9958 ;
+        padding: 5px 5px;
+    }
+    img{
+        object-fit: cover;
+        height: 180px;
+        width: 350px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
+.blocTexte{
+  display: flex;
+  flex-wrap: wrap;
+  height: 50px;
+  align-items: center;
+  margin: 10px 20px;
+    p{
+        order: 2;
+    }
+}
+.far.fa-heart{
+    font-size: 25px;
+    margin-left: auto;
+
+        &:hover{
+            color: $purple;
+            font-weight: bolder;
+            transition: all .5s;
+        }
+    }
+/* FOOTER */
+
+footer{
+    background: rgb(54, 54, 54);
+    color: white;
+    height: 100%;
+}
+.sectionFooter{
+    display: flex;
+    flex-wrap: wrap;
+
+    h5{
+        padding-left: 40px;
+        width: 100%;
+        font-family: 'Shrikhand', cursive;
+        font-size: 1rem;
+        padding-top: 50px;
+
+        @media screen and (min-width: 700px) and (max-width: 900px){
+            font-size: 2rem; 
+        }
+
+        @media screen and (min-width: 901px){
+            font-size: 2rem; 
+        }
+    }
+
+    ol{
+        @media screen and (min-width: 700px) and (max-width: 900px){
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+
+        }
+
+        @media screen and (min-width: 901px){
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+           
+        }
+
+        li{
+            display: flex;
+            align-items: center;
+
+            .fas.fa-utensils{
+                padding-right: 10px;
+            }
+            a, .fas.fa-hands-helping{
+                padding-right: 10px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    @media screen and (min-width: 901px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/** RESTAURANT : A LA FRANCAISE **/
+
+.imgRestaurant{
+    position: relative;
+    object-fit: cover;
+    background-position: top;
+    height: 350px;
+    width: 100%;
+}
+.carteMenueFrancaise{
+    width: 100%;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    background: rgba(230, 224, 224, 0.979);
+
+    .btnExplore{
+     margin-left: 35%;
+     margin: 30px 0px 30px 35%;
+
+     @media screen and (min-width: 700px) and (max-width: 900px){
+         margin: 30px 0px 30px 50%;
+     }
+     @media screen and (min-width: 901px){
+         margin: 30px 0px 30px 50%;
+     }
+    }
+
+    h2{
+    font-family: 'Shrikhand', cursive;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    margin-left: 8%;
+    }
+    .h2carte{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        margin-top: -88px;
+        background:  rgba(230, 224, 224, 0.979);
+        width: 100%;
+
+            .far.fa-heart{
+                margin-right: 35px;
+            }
+    }
+
+    h3{
+        width: 50px;
+        border-bottom: 3px $green solid;
+        margin-left: 8%;
+    }
+}
+.entree, .plat, .dessert{
+    @media screen and (min-width: 1300px){
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+.carteMenue{
+    box-shadow: $shadow;
+    border-radius: 15px;
+    max-width: 410px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    background: white;
+    max-height: 58px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media screen and (min-width: 1300px){
+        margin: 0px;
+    }
+
+        h4{
+            margin: 0;
+            padding: 2px 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        p{
+            margin: 0;
+            padding: 0px 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .euro{
+            font-weight: bolder;;
+            margin-top: 30px;
+            margin-right: 3rem;
+        }        
+}
+.carteMenueP{
+    box-shadow: $shadow;
+    border-radius: 15px;
+    max-width: 410px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    background: white;
+    max-height: 58px;
+        h4{
+            margin: 0;
+            padding: 2px 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        p{
+            margin: 0;
+            padding: 0px 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .euro{
+            font-weight: bolder;;
+            margin-top: 30px;
+            margin-right: 3rem;
+        }        
+}
+.carteMenueD{
+    box-shadow: $shadow;
+    border-radius: 15px;
+    max-width: 410px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    background: white;
+    max-height: 58px;
+
+        h4{
+            margin: 0;
+            padding: 2px 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        p{
+            margin: 0;
+            padding: 0px 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .euro{
+            font-weight: bolder;;
+            margin-top: 30px;
+            margin-right: 3rem;
+        }        
+}
+.txt{
+    width: 360px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1px 1px;
+}
+/* ANIMATION */ 
+.carteMenue{
+    animation: appear 1s;
+    animation-fill-mode: both;
+    &:first-child{
+        animation-delay: 250ms;
+    }
+    &:nth-child(2){
+        animation-delay: 450ms;
+    }
+    &:last-child{
+        animation-delay: 650ms;
+    }
+}
+.carteMenueP{
+    animation: appear 1s;
+    animation-fill-mode: both;
+    &:first-child{
+        animation-delay: 850ms;
+    }
+    &:nth-child(2){
+        animation-delay: 1050ms;
+    }
+    &:last-child{
+        animation-delay: 1250ms;
+    }
+}
+.carteMenueD{
+    animation: appear 1s;
+    animation-fill-mode: both;
+    &:first-child{
+        animation-delay: 1450ms;
+    }
+    &:nth-child(2){
+        animation-delay: 1650ms;
+    }
+    &:last-child{
+        animation-delay: 1850ms;
+    } 
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.far.fa-check-circle{
+    color: $green;
+    background: white;
+    margin-top: 40%;
+}
+.check{
+    background:$green;
+    height: 58px;
+    width: 1rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all .5s;
+    visibility: hidden;
+}
+.carteMenue{
+    &:hover .check{
+        padding-right: 5rem;
+        visibility: visible;
+    }
+    &:hover .fas.fa-check{
+        animation: roll .5s ease-out both;
+        visibility: visible;
+    }
+}
+.carteMenueP{
+    &:hover .check{
+        padding-right: 5rem;
+        visibility: visible;
+    }
+    &:hover .fas.fa-check{
+        animation: roll .5s ease-out both;
+        visibility: visible;
+    }
+}
+.carteMenueD{
+    &:hover .check{
+        padding-right: 5rem;
+        visibility: visible;
+    }
+    &:hover .fas.fa-check{
+        animation: roll .5s ease-out both;
+        visibility: visible;
+    }
+}
+.test{
+    display: inline-flex;
+    
+}
+
+.fas.fa-check{
+    color: $green;
+    background: white;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-top: 16px;
+    margin-left: 30px;
+    visibility: hidden;
+}
+@keyframes roll {
+    0% {
+      transform: translateX(30px) rotate(-270deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+}
+.blocentre{
+    width: 100%;
+    height: 100%;
+    margin-top: -3rem;
+    padding-top: 50%;
+    animation: tracking 2s;
+    position: absolute;
+    visibility: hidden;
+    
+    @media screen and (min-width: 901px){
+        margin-top:0;
+        padding-top: 0;
+    }
+
+     p{
+         font-size: 5rem;
+         font-weight: bold;
+         font-family: 'Shrikhand', cursive;
+         color: white;
+         animation: bounce-in-top 1.5s both;
+         margin-left: 30px;
+
+         @media screen and (min-width: 901px){
+            animation: bounce-in-top 2s both;
+         }
+
+
+    
+     }
+ }
+@keyframes tracking {
+    0% {
+        background: $green;
+        visibility: visible;
+
+    }
+    100% {
+        background: $green;
+        visibility: visible;
+
+    }
+  }
+  @keyframes bounce-in-top {
+    0% {
+              transform: translateY(-500px);
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+              transform: translateY(0);
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+              transform: translateY(-65px);
+              animation-timing-function: ease-in;
+    }
+    72% {
+              transform: translateY(0);
+              animation-timing-function: ease-out;
+    }
+    81% {
+              transform: translateY(-28px);
+              animation-timing-function: ease-in;
+    }
+    90% {
+              transform: translateY(0);
+              animation-timing-function: ease-out;
+    }
+    95% {
+              transform: translateY(-8px);
+              animation-timing-function: ease-in;
+    }
+    100% {
+              transform: translateY(0);
+              animation-timing-function: ease-out;
+    }
+  }
+  .lds-dual-ring {
+    display: inline-block;
+
+    @media screen and (min-width: 700px) and (max-width: 900px){
+        margin-left: 20%;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+    @media screen and (min-width: 901px){
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-top: 30%;
+    margin-left: 32%;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+
+    @media screen and (min-width: 901px){
+        animation: lds-dual-ring 1.5s linear infinite;
+    }
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
